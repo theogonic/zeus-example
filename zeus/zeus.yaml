@@ -1,0 +1,13 @@
+defs:
+  - zeus/defs/**/*.yaml
+generators:
+  ts:
+    output: src/generated/types.ts
+  gql:
+    output: src/generated/schema.graphql
+  gql-nestjs:
+    output: src/generated/resolvers.ts
+    tsTypeImport: "./types"
+  rest-nestjs:
+    output: src/generated/controllers.ts
+    tsTypeImport: './types'

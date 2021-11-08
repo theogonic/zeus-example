@@ -1,0 +1,22 @@
+type Example  {
+  strProp: String
+  numProp: Int
+}
+
+type CreateExampleResponse  {
+  example: Example
+}
+
+input CreateExampleRequest  {
+  strProp: String
+  numProp: Int
+}
+
+
+            type Query {
+              _dummy: Boolean
+            }
+          
+type Mutation {
+  createExample(request: CreateExampleRequest): CreateExampleResponse
+}
